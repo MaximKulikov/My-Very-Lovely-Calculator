@@ -1,12 +1,12 @@
 package ru.maximkulikov.calculator.ui;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import static es.uvigo.ei.sing.javafx.webview.Java2JavascriptUtils.connectBackendObject;
 
 import javafx.fxml.FXML;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import ru.maximkulikov.calculator.Calculator;
+import ru.maximkulikov.calculator.KalkulachkaService;
 
 /**
  * Lovely-Calculator
@@ -27,8 +27,7 @@ public class Kalkulachka {
     private void initialize() throws Exception {
         //Not Yet realize
         webEngine = webView.getEngine();
-        Path url = Paths.get(System.getProperty("user.dir"), "exterene/index.html");
-
+        connectBackendObject(webView.getEngine(), "kalkulachkaService", new KalkulachkaService());
         webEngine.load(Calculator.class.getResource(INDEX_HTML).toExternalForm());
     }
 }
