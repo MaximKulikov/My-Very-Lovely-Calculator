@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="angularcalculatorsample">
 <head>
-    <meta charset="UTF-8">
-    <title>Kalkulachka</title>
-    <script src="js/calculator-service.js" type="text/javascript"></script>
-
-    <script src="lib/angular.min.js" type="text/javascript"></script>
-
-    <script src="js/controller-angular.js" type="text/javascript"></script>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="lib/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-
+	<meta charset="UTF-8" />
+	<title>Kalkulachka</title>
+	<script src="js/calculator-service.js" type="text/javascript"></script><script src="lib/angular.min.js" type="text/javascript"></script><script src="js/controller-angular.js" type="text/javascript"></script><!-- Latest compiled and minified CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" /><!-- Optional theme -->
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" /><!-- Latest compiled and minified JavaScript --><script src="lib/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet" />
 </head>
 <body ng-controller="JavaFXWebDemoController">
-<p> {{ calculatedResult() }}</p>
+<div>
+	<p>{{ calculatedResult() }}</p>
 
-<button class="btn btn-lg btn-success" ng-click="plusOne()">+1</button>
+	<p><button class="btn btn-lg btn-default" ng-click="plusOne()">+1</button></p>
+</div>
 </body>
 </html>

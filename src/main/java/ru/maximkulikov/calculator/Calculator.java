@@ -26,4 +26,8 @@ public class Calculator extends Application {
         stage.getIcons().add(new Image("ru/maximkulikov/calculator/img/logo.png"));
         stage.show();
     }
+
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
 }
