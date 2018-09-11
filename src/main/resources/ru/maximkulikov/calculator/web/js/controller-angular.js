@@ -10,5 +10,9 @@ app.controller('JavaFXWebDemoController', function ($scope) {
     $scope.plusOne = function () {
         kalkulachkaService.plusOne();
     }
+    $scope.minusOne = function () {
+        kalkulachkaService.minusOne();
+
+    }
 });
 

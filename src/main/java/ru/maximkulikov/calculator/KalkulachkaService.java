@@ -1,8 +1,8 @@
 package ru.maximkulikov.calculator;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Lovely-Calculator
@@ -23,5 +23,10 @@ public class KalkulachkaService {
     public void plusOne() {
         log.info("plus one to result");
         result.incrementAndGet();
+    }
+
+    public void minusOne() {
+        log.info("minis one to result");
+        result.decrementAndGet();
     }
 }
