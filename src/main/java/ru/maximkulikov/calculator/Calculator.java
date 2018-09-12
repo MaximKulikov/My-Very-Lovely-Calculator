@@ -18,16 +18,19 @@ import ru.maximkulikov.calculator.ui.Kalkulachka;
 @Slf4j
 public class Calculator extends Application {
 
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Kalkulachka.class.getResource("Kalkulachka.fxml"));
         stage.setScene(new Scene(root));
         stage.setTitle("Kalkulachka");
         stage.getIcons().add(new Image("ru/maximkulikov/calculator/img/logo.png"));
+        stage.setResizable(false);
+        stage.setWidth(800.0);
+        stage.setHeight(600.0);
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        Application.launch(args);
     }
 }

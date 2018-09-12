@@ -1,11 +1,21 @@
-.row div {
+.vertical-align {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
 
+.container {
+    width: 600px;
+}
+
+.row div {
+border: 1px solid hotpink;
 }
 
 .btn-sq {
-    width: 100px !important;
-    height: 100px !important;
-    font-size: 10px;
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 2rem;
 }
 
 .mh1 div {
@@ -14,6 +24,14 @@
 
 .display {
     background-color: lightgrey;
+    display: table;
+    text-align: right;
 }
 
-.top-buffer { margin-top:20px; }
+.display-child {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+.top-buffer { margin-top: 20px; }
