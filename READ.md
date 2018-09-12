@@ -1,0 +1,1 @@
+Experiment to build JavaFx application with web technology in front and pure java in backend
